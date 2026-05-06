@@ -1,0 +1,83 @@
+body{
+    margin: 0%;
+    height: 100vh;
+    background-image: url(imagens/academiafundo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-left: 0%;
+    padding-left: 0%;
+    flex-direction: column;
+    
+}
+.login{
+   background-color: rgba(16, 24, 138, 0.26);
+    border: box-shadow(0px 0px 10px 5px rgba(74, 85, 98, 0.499));
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border-radius: 5%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    margin-bottom: 2%;
+    padding-bottom: 3%;
+    color: white;
+    
+}
+h1{
+    color:white;
+    font-size: large;
+    font-size: 300%;
+}
+
+p{
+    color:white;
+    font-size: large;
+    font-size: 100%;
+
+
+}
+
+.btn{
+    color: white;
+    border: 5px;
+    border-radius: 5%;
+    border: 2px solid rgb(86, 86, 220);
+    color: white;
+    border-radius: 5%;
+    margin: 15px auto;
+    text-decoration: none;
+    padding: 1%;
+    font-size: large;
+    margin: auto;
+    padding-top: 1%;
+    background-color: rgba(16, 24, 138, 0.26);
+
+    
+    
+
+}
+
+input{
+
+    
+    border: 8px;
+    border-radius: 2px 2px 2px 2px;
+    padding: 5px 85px;
+    margin: 5px auto;   
+    text-align: center;
+
+
+} 
+
+input::placeholder{
+    color: black;
+    font-size: large;
+    font-size: 100%;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}

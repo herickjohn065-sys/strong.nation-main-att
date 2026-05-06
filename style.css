@@ -1,0 +1,102 @@
+h1{
+    color: blue;
+}
+
+.img{
+    background-size: cover;
+}
+
+body{
+    margin: 0%;
+    height: 100vh;
+    background-image: url(imagens/academiafundo4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.btn1,
+.btn2{
+    display: inline-block;
+    width: 200px;
+    background-color: white;
+    color: black;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid rgb(86, 86, 220);
+    border-radius: 5%;
+    margin: 8px 8px 0;
+}
+.btn2{
+    background-color: rgb(29, 58, 185);
+    color: white;
+}
+
+.container {
+    display: flex;
+    /* Empurra os itens para as extremidades opostas */
+    justify-content: space-between; 
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+}
+
+.caixa1,
+.caixa2 {
+    background-color: transparent;
+    box-shadow: 0px 0px 10px 5px rgba(0, 110, 255, 0.5);
+    display: flex;
+    flex-direction: column; /* Para alinhar itens dentro da caixa verticalmente */
+    text-align: center;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(4px);
+    width: 280px;
+    min-width: 280px;
+    padding: 10px;
+}
+
+
+button{
+    background-color: rgb(29, 110, 208);
+    border-radius: 6px;
+    color: white;
+}
+
+h3{
+    margin: 0;
+    display: inline-block;
+    color: white;
+    padding: 0 2px;
+    text-decoration: none;
+    border: 2px solid rgb(86, 86, 220);
+    border-radius: 5%;
+    background-color: transparent;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 22%;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    flex-direction:row;
+}
+
+.footer-text {
+    display: block;
+    color: white;
+    padding: 0 1px;
+    margin: 4px 0;
+    border: 2px solid rgb(86, 86, 220);
+    border-radius: 5%;
+    background-color: transparent;
+}
+
+
+
