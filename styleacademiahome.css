@@ -1,17 +1,88 @@
 body{
-    margin: 0%;
-    height: 100vh;
-    background-image: url(imagens/academiafundo.jpeg);
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image: url("imagens/minhaacademia.png.png");
+
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-}
-h1{
-color: white;
+
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
 }
 
-h2{
-    color: beige;
+.container {
+    width: 380px; /* Reduzi um pouco a largura para não ocupar tanto a tela */
+    margin-left: 40px;
+    background-color: rgba(0,0,0,0.75);
+    padding: 30px; /* Reduzi o padding do topo/baixo de 30px para 15px */
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
 }
-p{
-    color:cyan;
+
+.logo {
+    width: 75px; /* Diminuí o logo (era 80px) */
+    display: block;
+    margin: 0 auto 15px auto;
+    margin-bottom: 10px; /* Reduzi o espaço abaixo do logo (era 30px) */
+}
+
+h1 {
+    color: #3838d3;
+    font-size: 25px; /* Diminuí um pouco a fonte */
+    text-align: center;
+    margin-top: 5px; /* Quase sem margem no topo para subir o texto */
+    margin-bottom: 10px;
+}
+
+.frase {
+    color: #00ffff;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px; /* Diminuí a frase (estava 20px, o que ocupava muito espaço) */
+    line-height: 1.2;
+}
+
+h2 {
+    color: rgb(51, 51, 240);
+    margin-top: 15px; /* Reduzi o espaço entre as seções (era 20px) */
+    margin-bottom: 8px;
+    font-size: 18px; /* Diminuí o título das seções */
+}
+
+p {
+    margin-top: 5px 3;
+    margin-bottom: 15px; /* Deixa as linhas de texto mais próximas uma da outra */
+    font-size: 13px; /* Tamanho de letra legível, mas compacto */
+}
+
+.promo {
+    background: linear-gradient(45deg, #00bfff, #001eff);
+    padding: 12px; /* Reduzi o preenchimento interno */
+    border-radius: 12px;
+    margin-top: 15px 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px; /* Promoção menor para economizar espaço */
+    box-shadow: 0px 0px 10px #0084ff;
+}
+
+button {
+    width: 100%;
+    padding: 9px; /* Botões mais finos */
+    margin-top: 8px; /* Menos espaço entre botões */
+    border-radius: 10px;
+    background-color: rgb(51, 51, 240);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
 }
