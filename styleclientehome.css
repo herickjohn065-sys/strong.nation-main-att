@@ -7,17 +7,26 @@ body{
 }
 
 h2{
-    color: white;
+    color: rgb(245, 241, 241);
+    text-shadow:-1px -1px 0 #1411ea,  
+                 1px -1px 0 #2a06f6, 
+                -1px 1px 0 #2a06f6, 
+                 1px 1px 0 #2a06f6;
+
 }
 
 p{
     color:beige;
-
-
+    text-shadow:-1px -1px 0 #1411ea,  
+                 1px -1px 0 #2a06f6, 
+                -1px 1px 0 #2a06f6, 
+                 1px 1px 0 #2a06f6;
+                 margin: 5%;
 }
 
 h1{
     color: white;
+    padding-left: 90px;
 }
 
 .card1{
@@ -51,6 +60,7 @@ h1{
     transition: 0.3s;  
     margin-left: 12%;
     background-image: url(imagens/deltaforce.jpg);
+     background-size: cover;
 
 }
 
@@ -64,7 +74,8 @@ h1{
     padding-right: 0px;
     transition: 0.3s;  
     margin-left: 12%;
-    background-image: url(imagens/academiacard.jpg);
+    background-image: url(imagens/panobianco.jpeg);
+     background-size: cover;
    
 }
 
@@ -78,7 +89,8 @@ h1{
     padding-right: 0px;
     transition: 0.3s;  
     margin-left: 12%;
-    background-image: url(imagens/academiacard.jpg);
+    background-image: url(imagens/gavioes.jpeg);
+     background-size: cover;
 
 }
 
@@ -92,7 +104,8 @@ h1{
     padding-right: 0px;
     transition: 0.3s;  
     margin-left: 12%;
-    background-image: url(imagens/academiacard.jpg);
+    background-image: url(imagens/bluefit.jpeg);
+     background-size: cover;
  
 }
 
@@ -106,7 +119,8 @@ h1{
     padding-right: 0px;
     transition: 0.3s;  
     margin-left: 12%;
-    background-image: url(imagens/academiacard.jpg);
+    background-image: url(imagens/ironberg.jpeg);
+     background-size: cover;
     
 }
 
@@ -120,8 +134,8 @@ h1{
     padding-right: 0px;
     transition: 0.3s;  
     margin-left: 12%;
-    background-image: url(imagens/academiacard.jpg);
-    /*imagem aqui*/
+    background-image: url(imagens/bodytech.jpeg);
+     background-size: cover;
 
     
 }
@@ -136,7 +150,8 @@ h1{
     padding-right: 0px;
     transition: 0.3s;  
     margin-left: 12%;
-    background-image: url(imagens/academiacard.jpg);
+    background-image: url(imagens/aquarius.jpeg);
+     background-size: cover;
      
     }
 
@@ -171,46 +186,64 @@ h1{
 .card8:hover{
     transform: scale(1.10);
 }
-.barrinhas{
-    width:30px;
-    cursor: pointer;
-    text-align: right;
-    margin-left: auto;
-    padding-right: 36px;
-    padding-bottom: 10px;
-}
 
 footer{
-    align-items:flex-end;
+    justify-content: left;
     display: flex;
-    align-items:end;
+    align-items:first baseline;
     flex-direction: column;
-    
-   
+    padding: 0%;
 
 }
 
-.barrinhas span{
-   display: block;
-   height: 4px;
-   background: white;
-   margin: 2px 0;
-   border-radius: 2px;
-   border: 3px solid black;
-   border-radius: 10px 10px;  
-}
 
-.barrinhas:hover span{
-    background-color: rgb(45, 94, 221)
-}
 .container-categorias{
     display: grid;
-    gap: 20px;
-    padding: 20px;
+    gap: 25px;
+    padding: 2px;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
+    margin: 4%;
 }
 
 .detail {
     background-color: white;
+}
+
+.container-pesquisa{
+    
+    position: absolute;
+    top:32px;
+    right:95px;
+    text-align: left; 
+
+}
+
+.botao{
+    color: rgb(17, 6, 237);
+    background-color: white;
+    text-shadow: black;
+    border: blue solid 2px 2px 2px 2px;
+    padding: 4px 17px;
+    border: #1411ea;
+    border-color: blue;
+    border-radius: 6px 6px 6px 6px;
+    font-size: medium;
+   
+}
+
+.input{
+    background-color: rgb(232, 232, 237);
+    border-color: blue;
+    border-radius: 6px 6px 6px 6px;
+    padding: 5px 190px;
+    color: blue;
+    text-align: left;  
+    padding-left: 10px;
+    padding-right: 380px; 
+     margin-right: 4px;
+}
+
+.input::placeholder{
+    text-align: left;
 }

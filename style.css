@@ -26,8 +26,9 @@ body{
     text-align: center;
     text-decoration: none;
     border: 2px solid rgb(86, 86, 220);
-    border-radius: 5%;
-    margin: 8px 8px 0;
+    border-radius: 5px 5px 5px 5px;
+    margin: 8px 8px 0 ;
+    margin-left: 25px;
 }
 .btn2{
     background-color: rgb(29, 58, 185);
@@ -36,18 +37,19 @@ body{
 
 .container {
     display: flex;
-    /* Empurra os itens para as extremidades opostas */
     justify-content: space-between; 
     align-items: flex-start;
     width: 100%;
-    padding: 0 10px;
-    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+    padding: 0 12px;
+    box-sizing: border-box;
+    padding-top: 8px;
+    
 }
 
 .caixa1,
 .caixa2 {
     background-color: transparent;
-    box-shadow: 0px 0px 10px 5px rgba(0, 110, 255, 0.5);
+    box-shadow: 2px 2px 10px 5px rgba(0, 110, 255, 0.5);
     display: flex;
     flex-direction: column; /* Para alinhar itens dentro da caixa verticalmente */
     text-align: center;
@@ -56,6 +58,8 @@ body{
     width: 280px;
     min-width: 280px;
     padding: 10px;
+    padding-top: 10px;
+
 }
 
 
@@ -81,11 +85,14 @@ footer {
     bottom: 0;
     left: 0;
     width: 22%;
-    text-align: left;
-    padding: 10px;
-    box-sizing: border-box;
-    font-size: 15px;
+    text-align: center;
+    padding: 7px;
+    font-size: 12px;
     flex-direction:row;
+    text-shadow:-1px -1px 0 #1411ea,  
+                 1px -1px 0 #2a06f6, 
+                -1px 1px 0 #2a06f6, 
+                 1px 1px 0 #2a06f6;
 }
 
 .footer-text {
@@ -93,7 +100,6 @@ footer {
     color: white;
     padding: 0 1px;
     margin: 4px 0;
-    border: 2px solid rgb(86, 86, 220);
     border-radius: 5%;
     background-color: transparent;
 }

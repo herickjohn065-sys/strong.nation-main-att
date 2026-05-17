@@ -4,7 +4,7 @@ body{
 
     font-family: Arial, Helvetica, sans-serif;
 
-    background-image: url("imagens/minhaacademia.png.png");
+    background-image: url("imagens/academiafundo3.jpeg");
 
     background-size: cover;
     background-position: center;
@@ -17,28 +17,32 @@ body{
 }
 
 .container {
-    width: 380px; /* Reduzi um pouco a largura para não ocupar tanto a tela */
+    width: 380px; 
     margin-left: 40px;
-    background-color: rgba(0,0,0,0.75);
-    padding: 30px; /* Reduzi o padding do topo/baixo de 30px para 15px */
+    background-color: rgba(18, 9, 69, 0.395);
+    padding: 30px; 
     border-radius: 20px;
     color: white;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
 }
 
 .logo {
-    width: 75px; /* Diminuí o logo (era 80px) */
+    width: 75px; 
     display: block;
     margin: 0 auto 15px auto;
-    margin-bottom: 10px; /* Reduzi o espaço abaixo do logo (era 30px) */
+    margin-bottom: 10px; 
 }
 
 h1 {
     color: #3838d3;
-    font-size: 25px; /* Diminuí um pouco a fonte */
+    font-size: 25px; 
     text-align: center;
-    margin-top: 5px; /* Quase sem margem no topo para subir o texto */
+    margin-top: 5px; 
     margin-bottom: 10px;
+     text-shadow:-1px -1px 0 #000000,  
+                 1px -1px 0 #030303, 
+                -1px 1px 0 #080808, 
+                 1px 1px 0 #090909;
 }
 
 .frase {
@@ -46,39 +50,39 @@ h1 {
     font-style: italic;
     margin-bottom: 20px;
     text-align: center;
-    font-size: 16px; /* Diminuí a frase (estava 20px, o que ocupava muito espaço) */
+    font-size: 16px;
     line-height: 1.2;
 }
 
 h2 {
     color: rgb(51, 51, 240);
-    margin-top: 15px; /* Reduzi o espaço entre as seções (era 20px) */
+    margin-top: 15px; 
     margin-bottom: 8px;
-    font-size: 18px; /* Diminuí o título das seções */
+    font-size: 14px; 
 }
 
 p {
     margin-top: 5px 3;
-    margin-bottom: 15px; /* Deixa as linhas de texto mais próximas uma da outra */
-    font-size: 13px; /* Tamanho de letra legível, mas compacto */
+    margin-bottom: 15px; 
+    font-size: 13px;
 }
 
 .promo {
     background: linear-gradient(45deg, #00bfff, #001eff);
-    padding: 12px; /* Reduzi o preenchimento interno */
+    padding: 12px; 
     border-radius: 12px;
     margin-top: 15px 0;
     margin-bottom: 10px;
     text-align: center;
     font-weight: bold;
-    font-size: 12px; /* Promoção menor para economizar espaço */
+    font-size: 12px; 
     box-shadow: 0px 0px 10px #0084ff;
 }
 
 button {
     width: 100%;
-    padding: 9px; /* Botões mais finos */
-    margin-top: 8px; /* Menos espaço entre botões */
+    padding: 9px;
+    margin-top: 8px;
     border-radius: 10px;
     background-color: rgb(51, 51, 240);
     color: white;
@@ -86,3 +90,4 @@ button {
     cursor: pointer;
     border: none;
 }
+

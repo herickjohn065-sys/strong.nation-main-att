@@ -7,16 +7,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $telefone = $_POST['Telefone'];
     $email = $_POST['Email'];
     $senha = $_POST['Senha'];
+   
 
-    $senhacriptografada = md5($senha);
+    if ($senha === $confirmar) {
 
-    header("Location: academiaHome.html");
-    exit();
+        header("Location: academiaHome.html");
+        exit();
+
+    } else {
+
+        echo "Senhas não conferem!";
 
     }
-    
-    else {
-        echo "coloque uma senha";
-        }
-    
+}
 ?>
