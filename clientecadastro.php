@@ -7,7 +7,7 @@ if ($conn->connect_error) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['nome'];
-    $cnpj = $_POST['cnpj'];
+    $cpf = $_POST['cpf'];
     $telefone = $_POST['telefone'];
     $email = $_POST['email'];
     $senha = $_POST['senha'];
@@ -16,12 +16,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
     // Usando prepared statement para evitar SQL Injection
-    $stmt = $conn->prepare("INSERT INTO academia (nome, cnpj, telefone, email, senha) VALUES (?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssss", $nome, $cnpj, $telefone, $email, $senhaHash);
+    $stmt = $conn->prepare("INSERT INTO clientes (nome, cpf, telefone, email, senha) VALUES (?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssss", $nome, $cpf, $telefone, $email, $senhaHash);
 
     if ($stmt->execute()) {
-        // Cadastro feito com sucesso → redireciona para login da academia
-        header("Location: academialogin.html");
+        // Cadastro feito com sucesso → redireciona para login
+        header("Location: clientelogin.html");
         exit;
     } else {
         echo "Erro ao cadastrar: " . $stmt->error;

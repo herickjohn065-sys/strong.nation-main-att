@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="logincliente.css">
-    
-
-    </head>
+</head>
 <body>
-    
-    <a href="http://index.html"></a>
+
 <h1> Seja Bem Vindo!!!</h1>
 
 <div class="container">
     <div class="caixa"> 
         <h2 style="color: white;"> Login </h2>
-        <input type="text" placeholder="Email" required>
-        <input type="password" placeholder="Senha" required>
+        <form action="logincliente.php" method="post">
+            <input type="text" name="email" placeholder="Email" required>
+            <input type="password" name="senha" placeholder="Senha" required>
 
-<a href="clienteHome.html">
-    
-    <div class="botoes">
-    <a href="" class="btn">Entrar</button><br>
-     <a href="index.html" class="btn">Voltar</a>
-     </div>
-</a>
-    <footer>
-<p>contate-nos : (11) 953234235</p>
-<p>email: herickjohn065@gmail.com</p>
-<p>email: mariananunesamorim8@gmail.com</p>
+            <div class="botoes">
+                <button type="submit" name="login" class="btn">Entrar</button><br>
+                <a href="index.html" class="btn">Voltar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>contate-nos : (11) 953234235</p>
+    <p>email: herickjohn065@gmail.com</p>
+    <p>email: mariananunesamorim8@gmail.com</p>
 </footer>
-    
+
 </body>
 </html>
