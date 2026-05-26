@@ -12,15 +12,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    // Criptografa a senha antes de salvar
     $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
-    // Usando prepared statement para evitar SQL Injection
     $stmt = $conn->prepare("INSERT INTO academia (nome, cnpj, telefone, email, senha) VALUES (?, ?, ?, ?, ?)");
     $stmt->bind_param("sssss", $nome, $cnpj, $telefone, $email, $senhaHash);
 
     if ($stmt->execute()) {
-        // Cadastro feito com sucesso → redireciona para login da academia
         header("Location: academialogin.html");
         exit;
     } else {
